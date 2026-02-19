@@ -1,9 +1,42 @@
 img {
-    width: 200px;
+    width: 800px;
+    height: 400px;
+    border-radius: 100px;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.4);
+    transform: all 0.3s ease-in-out;
+    animation: swing 2s infinite;
 }
 body {
+    background-color: #EC3750;
+    color: rgb(255, 255, 255); font-family: 
+    system-ui;
+    font-size: 2rem;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    background: azure;
-    color: purple;
+}
+img:hover{
+    transform: scale(1.1);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.8);
+}
+@keyframes swing {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(10deg); }
+    50% { transform: rotate(0deg); }
+    75% { transform: rotate(-10deg); }
+    100% { transform: rotate(0deg); }
+}
+a{
+    color: mediumaquamarine;
+}
+a:hover{
+    color: violet;
+}
+
+button:hover{
+    border-color:rgb(255, 255, 255);
+    background-color:rgba(155, 62, 62, 0);
+    box-shadow: 10px 5px 3px black;
+    transition: all 0.5s ease-in-out;
+    color:whitesmoke;
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
 }
